@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB
-mongoose.connect('${DATABASE}', { useNewUrlParser: true, useUnifiedTopology: true,dbName: "quotes" })
+mongoose.connect(`${DATABASE}`, { useNewUrlParser: true, useUnifiedTopology: true,dbName: "quotes" })
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
