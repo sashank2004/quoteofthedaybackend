@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://sashanksingh1983:lvSHnA79mReqOkDQ@cluster0.s3mp5jt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', { useNewUrlParser: true, useUnifiedTopology: true,dbName: "quotes" })
+mongoose.connect('mongodb+srv://sashanksingh1983:lvSHnA79mReqOkDQ@cluster0.s3mp5jt.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', {dbName: "quotes" })
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.log(err));
 
